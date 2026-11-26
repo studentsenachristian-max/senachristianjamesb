@@ -1,26 +1,10 @@
 #senachristianjamesb
-h
-
-h
-
-h
-
-h
-
-h
-
-h
-
-h
-
-hus
-
 
 import tkinter as cj
 
-R = "\033[91m"  # R
-B = "\033[94m"  # B
-RESET = "\033[0m"  # Normal
+R = "\033[91m"
+B = "\033[94m"
+RESET = "\033[0m"
 
 
 print("="*45)
@@ -750,7 +734,7 @@ while True:
         answered = False
 
         quiz_window = cj.Tk()
-        quiz_window.title("Python Learning System - Quiz")
+        quiz_window.title(" CJ Quiz")
         quiz_window.geometry("550x450")
         quiz_window.resizable(False, False)
 

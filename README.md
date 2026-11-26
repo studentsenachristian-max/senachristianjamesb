@@ -18,10 +18,42 @@ hus
 
 import tkinter as tk
 
-print("------------------------------------------")
-print("        PYTHON LEARNING SYSTEM")
-print("------------------------------------------")
-print("Learn Python step by step!")
+R = "\033[91m"  # R
+B = "\033[94m"  # B
+RESET = "\033[0m"  # Normal
+
+
+print("="*45)
+print(R + "              WHAT IS PYTHON?" + RESET)
+print("="*45)
+
+print()
+print("Python is a widely-used programming")
+print("language that was created by " + B + "Guido van")
+print("Rossum" + RESET + " in " + B + "1991." + RESET)
+
+print()
+print(R + "WHY LEARN PYTHON?" + RESET)
+print("---------------------------------------------")
+
+print(B + "[1]" + RESET + " Simple and easy to learn")
+print("    Great for beginners.")
+
+print()
+print(B + "[2]" + RESET + " Readable syntax")
+print("    Code looks almost like English.")
+
+print()
+print(B + "[3]" + RESET + " Versatile")
+print("    Used in AI, web, automation, games, etc.")
+
+print()
+print(B + "[4]" + RESET + " Huge community")
+print("    Lots of support, tutorials, and libraries.")
+
+print()
+print()
+print(R + "Lets Learn Python!!" + RESET)
 print()
 input("Press ENTER to start...")
 

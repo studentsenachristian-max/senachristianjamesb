@@ -16,7 +16,7 @@ h
 hus
 
 
-import tkinter as tk
+import tkinter as cj
 
 R = "\033[91m"  # R
 B = "\033[94m"  # B
@@ -749,12 +749,12 @@ while True:
         score = 0
         answered = False
 
-        quiz_window = tk.Tk()
+        quiz_window = cj.Tk()
         quiz_window.title("Python Learning System - Quiz")
         quiz_window.geometry("550x450")
         quiz_window.resizable(False, False)
 
-        selected_answer = tk.StringVar(master=quiz_window)
+        selected_answer = cj.StringVar(master=quiz_window)
 
         def show_question():
 
@@ -828,38 +828,38 @@ while True:
 
                     submit_button.pack_forget()
 
-        title_label = tk.Label(quiz_window, text="PYTHON QUIZ",
+        title_label = cj.Label(quiz_window, text="PYTHON QUIZ",
                                font=("Arial", 20, "bold"))
         title_label.pack(pady=15)
 
-        number_label = tk.Label(quiz_window, text="Question 1",
+        number_label = cj.Label(quiz_window, text="Question 1",
                                 font=("Arial", 12))
         number_label.pack()
 
-        question_label = tk.Label(quiz_window, text="",
+        question_label = cj.Label(quiz_window, text="",
                                   font=("Arial", 14, "bold"),
                                   wraplength=480)
         question_label.pack(pady=20)
 
-        choice_a = tk.Radiobutton(quiz_window, text="",
+        choice_a = cj.Radiobutton(quiz_window, text="",
                                   variable=selected_answer, value="A",
                                   font=("Arial", 12))
         choice_a.pack(anchor="w", padx=70)
 
-        choice_b = tk.Radiobutton(quiz_window, text="",
+        choice_b = cj.Radiobutton(quiz_window, text="",
                                   variable=selected_answer, value="B",
                                   font=("Arial", 12))
         choice_b.pack(anchor="w", padx=70)
 
-        choice_c = tk.Radiobutton(quiz_window, text="",
+        choice_c = cj.Radiobutton(quiz_window, text="",
                                   variable=selected_answer, value="C",
                                   font=("Arial", 12))
         choice_c.pack(anchor="w", padx=70)
 
-        feedback_label = tk.Label(quiz_window, text="", font=("Arial", 12))
+        feedback_label = cj.Label(quiz_window, text="", font=("Arial", 12))
         feedback_label.pack(pady=15)
 
-        submit_button = tk.Button(quiz_window, text="Submit Answer",
+        submit_button = cj.Button(quiz_window, text="Submit Answer",
                                   font=("Arial", 12),
                                   command=check_answer)
         submit_button.pack(pady=10)
